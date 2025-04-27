@@ -1,0 +1,180 @@
+body {
+    padding-top: 10px;
+}
+
+#vehicle_section {
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Information about tags*/
+#vin {
+    width: 250px;
+    margin-left: 39%;
+    margin-top: -20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    height: 35px;
+}
+
+#engine_image {
+    width: 120px;
+    margin-left: 580px;
+    margin-top: -60px;
+}
+
+#voltage {
+    background-color: #E3FCF7;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 500px;
+    margin-top: -240px;
+}
+
+#current {
+    background-color: #E3FCF7;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 500px;
+}
+
+#ison {
+    background-color: #F9EBFF;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 630px;
+    margin-top: -40px;
+} 
+
+/*Alert icon and tooltip display on hover*/
+.alert_section {
+    height: 50px;
+}
+
+#alert_image {
+    width: 40px;
+    margin-left: 250px;
+    margin-top: -350px;
+}
+
+.alert_section:hover #alert_tooltip {
+    display: block;
+    clip: initial;
+    opacity: 1;
+    visibility: visible;
+    color: white;
+}
+
+#alert_tooltip {
+    visibility: hidden;
+    background-color: #ff0000;
+    font-size: small;
+    text-align: center;
+    margin-left: 620px;
+    margin-top: -160px;
+    border-radius: 5px;
+    width: 160px;
+}
+
+/*Buttons*/
+.col {
+    flex-grow: 1;
+    width: 200px;
+    margin-right: 30px;
+}
+
+#component_name {
+    width: 200px;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+.btn {
+    background-color: #00ed64;
+    border: none;
+    color: black;
+    width: 200px;
+    margin: 0px;
+}
+
+.btn:hover {
+    background-color: #00684A;
+}
+
+/* Bucket info */
+.border_box {
+    border-style: solid;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 7px;
+}
+
+.border_box p {
+    margin-bottom: 0px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #00ed65;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #00ed65;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
